@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+@import "tailwindcss";
+@font-face {
+  font-family: "KummbhSans";
+  src: url("./assets/fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+}
+@theme {
+  --font-Kumbh-Sans: "KumbhSans";
+  --breakpoint-vaxo: 950px;
+  --breakpoint-small: 850px;
+  --breakpoint-medium: 1040px;
+  --breakpoint-smaller: 600px;
+}
+#root {
+  padding: 20px;
+  padding-right: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 850px) {
+  #root {
+    padding-right: 20px;
+  }
+}
